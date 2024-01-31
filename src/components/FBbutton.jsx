@@ -35,7 +35,7 @@ const FBbutton = () => {
         }
       },
       {
-        config_id: NEXT_PUBLIC_CONFIG_ID,
+        config_id: process.env.NEXT_PUBLIC_CONFIG_ID,
         response_type: 'code',
         override_default_response_type: true,
         extras: {
