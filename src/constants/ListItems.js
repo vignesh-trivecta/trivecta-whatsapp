@@ -1,7 +1,8 @@
 export const listItems = [
-    {index: 0, content: "Integrations to bring in context from Zoho, Shopify, etc."},
-    {index: 1, content: "Pre-built templates to send updates & reminders"},
-    {index: 2, content: "Powerful automations to resolve issues faster"},
-    {index: 3, content: "Targeted Campaigns to deliver personalized offers"},
-    {index: 4, content: "24x7 instant engagement with no-code chatbots"},
+    {index: 0, title: "Direct Partnership", content: "Work directly with our experts, no intermediaries."},
+    {index: 1, title: "Complete Ownership", content: "We build, manage, and optimize your integration."},
+    {index: 2, title: "Streamlined Communication", content: "Full visibility and control over your WhatsApp interactions."},
+    {index: 3, title: "Transparent Billing", content: "Meta bills our customers directly based on individual usage."},
+    {index: 4, title: "Simplified Invoicing", content: "24x7 instant engagement with no-code chatbots"},
+    {index: 5, title: "Peace of Mind", content: "Enjoy a secure and successful WhatsApp integration experience."},
 ]

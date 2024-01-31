@@ -2,14 +2,15 @@ import React, { useEffect } from 'react';
 import { FaFacebook } from "react-icons/fa";
 
 const FBbutton = () => {
+
   useEffect(() => {
     // Load the Facebook SDK asynchronously
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: 'your-facebook-app-id',
+        appId: '277762014973347',
         cookie: true,
         xfbml: true,
-        version: 'v19.0',
+        version: 'v18.0',
       });
     };
 
@@ -27,15 +28,14 @@ const FBbutton = () => {
     window.FB.login(
       function (response) {
         if (response.authResponse) {
-          const code = response.authResponse.code;
-          // The returned code must be transmitted to your backend
-          // Perform a server-to-server call from there to Facebook servers for an access token
+          const accessToken = response.authResponse.accessToken;
+          //Use this token to call the debug_token API and get the shared WABA's ID
         } else {
           console.log('User cancelled login or did not fully authorize.');
         }
       },
       {
-        config_id: '<CONFIG_ID>',
+        config_id: NEXT_PUBLIC_CONFIG_ID,
         response_type: 'code',
         override_default_response_type: true,
         extras: {
@@ -48,14 +48,17 @@ const FBbutton = () => {
   };
 
   return (
-    <div>
-        <button 
-            className='border border-gray-300 rounded-full p-2 flex items-center hover:bg-[#F6FAFD]' 
-            onClick={launchWhatsAppSignup}
-        >
-            <span className='mr-2'><FaFacebook className='h-5 w-5 text-blue-500' /></span>
-            <span className='text-sm'>Sign Up With Facebook</span>
-        </button>
+    <div 
+      className='flex flex-col items-center space-y-2' 
+    >
+      <p className='text-base font-bold text-white'>Sign Up with Facebook</p>
+      <button 
+        type='button'
+        onClick={launchWhatsAppSignup} 
+        className='mr-2 hover:scale-110 transform transition duration-500 cursor-pointer'
+      >
+        <FaFacebook className='h-12 w-12 text-blue-800 bg-white rounded-full' />
+      </button>
     </div>
   );
 };

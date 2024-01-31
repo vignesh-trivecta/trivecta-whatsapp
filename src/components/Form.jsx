@@ -1,14 +1,15 @@
 import React from 'react'
 import FBbutton from './FBbutton'
+import { FaMessage } from "react-icons/fa6";
+
 
 const Form = () => {
   return (
-    <div className='border border-gray-300 rounded-xl p-4 bg-white space-y-4'>
-        <div>
-            <p className='font-bold text-lg'>Start your free trial</p>
-            <p className='text-gray-600'>Get started with a demo account on Trivecta</p>            
-        </div>
-        <FBbutton />
+    <div className='mt-6 lg:mt-0'>
+      <FaMessage className='h-60 w-60 fill-green-600' />
+      <div className='relative -top-40'>
+        <FBbutton/>
+      </div>
     </div>
   )
 }
