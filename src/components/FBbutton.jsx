@@ -10,7 +10,7 @@ const FBbutton = () => {
         appId: '277762014973347',
         cookie: true,
         xfbml: true,
-        version: 'v18.0',
+        version: 'v19.0',
       });
     };
 
@@ -30,6 +30,14 @@ const FBbutton = () => {
         if (response.authResponse) {
           const accessToken = response.authResponse.accessToken;
           //Use this token to call the debug_token API and get the shared WABA's ID
+          window.FB.api(
+            '/me',
+            'GET',
+            {"fields":"id,name"},
+            function(response) {
+              console.log(response);
+            }
+          );
         } else {
           console.log('User cancelled login or did not fully authorize.');
         }
