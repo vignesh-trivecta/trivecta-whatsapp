@@ -29,6 +29,7 @@ const FBbutton = () => {
       function (response) {
         if (response.authResponse) {
           const accessToken = response.authResponse.accessToken;
+          console.log(accessToken);
           //Use this token to call the debug_token API and get the shared WABA's ID
           window.FB.api(
             '/me',
