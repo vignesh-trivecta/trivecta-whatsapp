@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import PrivacyPolices from './pages/PrivacyPolices'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
-    <div className='bg-[#F6F9F9] h-[100vh] overflow-auto p-2'>
+    <div className='bg-[#F6F9F9] h-[100vh] overflow-auto'>
       <BrowserRouter>
-        <div className='p-2 flex'>
-          <img src={"/logo.png"} width={'100px'}  height={'80px'} className='mb-2' />
-          {/* <img src='public\logo1.png' width={'120px'}  height={'120px'} className='mb-4 ' /> */}
-        </div>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/privacy-policies' element={<PrivacyPolices />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )

@@ -24,7 +24,7 @@ const ListItems = () => {
 const ServiceList = () => {
   return (
       <div className='space-y-4'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center mt-4'>
             {/* <img src='src\assets\logo2.png' width={'50px'}  height={'50px'} className='relative' /> */}
             <p className='text-center font-bold text-4xl'>
                 <span className='text-green-700'>Trivecta</span>
@@ -41,7 +41,7 @@ const ServiceList = () => {
             <ul className='space-y-4 text-lg text-gray-700'>
                 <ListItems />
             </ul>
-            <p>Check our <Link to={"/privacy-policies"} className='hover:underline text-blue-500'>Privacy policies</Link></p>
+            <p>Check our <Link to={"/privacy-policies"} className='hover:underline text-blue-500'>Privacy policy</Link></p>
         </div>
 
         </div>

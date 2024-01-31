@@ -5,7 +5,7 @@ import { FaMessage } from "react-icons/fa6";
 
 const Form = () => {
   return (
-    <div className='mt-6 lg:mt-0'>
+    <div className='mt-6 lg:mt-0 pt-10 lg:pt-0'>
       <FaMessage className='h-60 w-60 fill-green-600' />
       <div className='relative -top-40'>
         <FBbutton/>
