@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='flex flex-col sm:flex-row items-center sm:items-start justify-between bg-[#072136] text-white lg:mt-16 px-6 py-14 space-y-10 sm:space-y-0'>
         <div className='flex'>
-            <img src={"public/logo-small.png"}  className='relative w-16 h-16' />
+            <img src={"/logo-small.png"}  className='relative w-16 h-16' />
             <div className='ml-4'>
                 <Link to={"https://www.trivectadigital.com/"} className='text-[#88B7D6] font-semibold'>Trivecta Digital Solutions Pvt Ltd,</Link>
                 <div className='mt-4'>
