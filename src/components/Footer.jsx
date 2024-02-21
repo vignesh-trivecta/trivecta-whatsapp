@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div>
             <p className='hover:cursor-pointer text-sm' onClick={(e) => {window.location.href ='mailto:info@trivectadigital.com';}}>info@trivectadigital.com</p>
-            <p className='text-sm mt-2'>© 2023 by TRIVECTA DIGITAL SOLUTIONS.</p>
+            <p className='text-sm mt-2'>© 2024 by TRIVECTA DIGITAL SOLUTIONS.</p>
         </div>
     </div>
   )
