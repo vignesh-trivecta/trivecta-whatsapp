@@ -15,6 +15,7 @@ const Form = () => {
         <LinkWithLabel  
           LinkName={"Sign In"}
           To={"/sign-in"}
+          Label={"Already a Customer?"}
         />
       </div>
     </div>
