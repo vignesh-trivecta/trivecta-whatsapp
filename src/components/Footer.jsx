@@ -16,9 +16,21 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div>
-            <p className='hover:cursor-pointer text-sm' onClick={(e) => {window.location.href ='mailto:info@trivectadigital.com';}}>info@trivectadigital.com</p>
-            <p className='text-sm mt-2'>© 2024 by TRIVECTA DIGITAL SOLUTIONS.</p>
+        <div className='flex flex-col'>
+            <div>
+                <p className='hover:cursor-pointer text-sm' onClick={(e) => {window.location.href ='mailto:info@trivectadigital.com';}}>info@trivectadigital.com</p>
+                <p className='text-sm mt-2'>© 2024 by TRIVECTA DIGITAL SOLUTIONS.</p>
+            </div>
+            <div className='flex space-x-3 mt-3'> 
+                <Link to={"https://twitter.com/TrivectaDigital"}>
+                    <img src='/twitter.png' >
+                    </img>
+                </Link>
+                <Link to={"https://www.linkedin.com/company/trivectadigital/mycompany/"}>
+                    <img src='/linkedin.png' >
+                    </img>
+                </Link>
+            </div>
         </div>
     </div>
   )
