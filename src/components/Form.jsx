@@ -11,13 +11,13 @@ const Form = () => {
       <div className='relative -top-40'>
         <FBbutton/>
       </div>
-      <div className='border p-4 rounded-md bg-white shadow-lg'>
+      {/* <div className='border p-4 rounded-md bg-white shadow-lg'>
         <LinkWithLabel  
           LinkName={"Sign In"}
           To={"/sign-in"}
           Label={"Already a Customer?"}
         />
-      </div>
+      </div> */}
     </div>
   )
 }
