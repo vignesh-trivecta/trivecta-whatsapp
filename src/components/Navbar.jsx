@@ -8,7 +8,7 @@ const Navbar = () => {
             <img src={"logo3.png"} width={'82px'}  height={'87px'} className='' />
         </Link>
         {/* <img src='public\logo1.png' width={'120px'}  height={'120px'} className='mb-4 ' /> */}
-        <div className='mr-0 lg:mr-32 text-lg lg:text-3xl font-bold text-white'>
+        <div className='lg:mx-auto text-lg lg:text-3xl font-bold text-white'>
             <p>Trivecta Digital - Reliable WhatsApp Tech Provider</p>
         </div>
     </div>
