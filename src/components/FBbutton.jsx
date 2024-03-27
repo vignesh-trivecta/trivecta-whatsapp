@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaFacebookF } from "react-icons/fa";
+import { LiaFacebook } from "react-icons/lia";
 
 const FBbutton = () => {
 
@@ -44,7 +45,7 @@ const FBbutton = () => {
         }
       },
       {
-        config_id: process.env.NEXT_PUBLIC_CONFIG_ID,
+        config_id: import.meta.env.VITE_CONFIG_ID,
         response_type: 'code',
         override_default_response_type: true,
         extras: {
@@ -58,15 +59,16 @@ const FBbutton = () => {
 
   return (
     <div 
-      className='flex flex-col items-center space-y-2' 
+      className='' 
     >
-      <p className='text-base font-bold text-white'>Sign Up with Facebook</p>
+      {/* <p className='text-base font-bold text-white'>Sign Up with Facebook</p> */}
       <button 
         type='button'
         onClick={launchWhatsAppSignup} 
-        className='mr-2 hover:scale-110 transform transition duration-500 cursor-pointer'
-      >
-        <FaFacebook className='h-12 w-12 text-blue-800 bg-white rounded-full' />
+        className='mr-2 flex items-center space-x-4 border border-[#1877F2]  cursor-pointer bg-white rounded-md p-2'
+      > 
+          <img src='facebook_2x.png' className='' />
+          <span className='text-[#1877F2] font-semibold text-xl'>Login with Facebook</span>
       </button>
     </div>
   );
